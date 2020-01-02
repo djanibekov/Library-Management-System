@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SortController">
+   <children>
+      <Region prefHeight="27.0" prefWidth="374.0" VBox.vgrow="ALWAYS" />
+      <HBox prefHeight="19.0" prefWidth="391.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Region prefHeight="42.0" prefWidth="36.0" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="25.0" prefWidth="90.0" text="Title:" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="titleTextField" prefHeight="23.0" prefWidth="184.0" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="50.0" prefWidth="64.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="7.0" prefWidth="391.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Region prefHeight="42.0" prefWidth="36.0" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="27.0" prefWidth="90.0" text="Author:" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="authorTextField" prefHeight="16.0" prefWidth="184.0" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="50.0" prefWidth="64.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="21.0" prefWidth="391.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Region prefHeight="42.0" prefWidth="36.0" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="26.0" prefWidth="90.0" text="Subject:" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="subjectTextField" prefHeight="2.0" prefWidth="184.0" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="50.0" prefWidth="64.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="16.0" prefWidth="391.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Region prefHeight="42.0" prefWidth="36.0" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="26.0" prefWidth="90.0" text="Publish date:" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="publishDayTextField" prefHeight="0.0" prefWidth="41.0" promptText="day" />
+            <Region prefHeight="44.0" prefWidth="11.0" />
+            <TextField fx:id="publishMonthTextField" prefHeight="6.0" prefWidth="62.0" promptText="month" />
+            <Region prefHeight="44.0" prefWidth="11.0" />
+            <TextField fx:id="publishYearTextField" prefHeight="0.0" prefWidth="62.0" promptText="year" />
+            <Region prefHeight="50.0" prefWidth="64.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="34.0" prefWidth="391.0">
+         <children>
+            <Region prefHeight="42.0" prefWidth="36.0" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="25.0" prefWidth="90.0" text="Global ISBN:" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="globalISBN" prefHeight="0.0" prefWidth="184.0" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="50.0" prefWidth="64.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="6.0" prefWidth="391.0">
+         <children>
+            <Region prefHeight="26.0" prefWidth="14.0" />
+            <MenuButton fx:id="menuButton" mnemonicParsing="false" text="Free">
+              <items>
+                <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button fx:id="freeButton" mnemonicParsing="false" text="Free    " />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button fx:id="borrowButton" mnemonicParsing="false" text="Borrowed" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button fx:id="reserveButton" mnemonicParsing="false" text="Reserve" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button fx:id="allButton" mnemonicParsing="false" text="All" />
+                     </graphic>
+                  </MenuItem>
+              </items>
+            </MenuButton>
+            <Region prefHeight="26.0" prefWidth="197.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="sortButton" mnemonicParsing="false" onAction="#sortButtonClick" prefHeight="26.0" prefWidth="39.0" text="Sort" />
+            <Region prefHeight="26.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Region prefHeight="22.0" prefWidth="374.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

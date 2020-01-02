@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="244.0" prefWidth="456.0" spacing="12.0" stylesheets="@addNewStudent.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddNewUserController">
+   <children>
+      <Region prefHeight="70.0" prefWidth="450.0" VBox.vgrow="ALWAYS" />
+      <HBox prefHeight="42.0" prefWidth="600.0">
+         <children>
+            <Region prefHeight="42.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="idLabel" contentDisplay="BOTTOM" prefHeight="40.0" prefWidth="111.0" text="ID:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="IDTextField" prefHeight="34.0" prefWidth="200.0" promptText="U*******" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="50.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="42.0" prefWidth="600.0">
+         <children>
+            <Region prefHeight="27.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="38.0" prefWidth="107.0" text="Name:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" prefHeight="34.0" prefWidth="200.0" promptText="Name" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="50.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="42.0" prefWidth="600.0">
+         <children>
+            <Region prefHeight="42.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="38.0" prefWidth="109.0" text="Surname:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="surnameTextField" prefHeight="34.0" prefWidth="200.0" promptText="Surname" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="27.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="42.0" prefWidth="506.0">
+         <children>
+            <Region prefHeight="42.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="38.0" prefWidth="108.0" text="Pasword:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordTextField" prefHeight="34.0" prefWidth="200.0" promptText="Password" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="50.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="105.0" prefWidth="450.0">
+         <children>
+            <Region prefHeight="56.0" prefWidth="353.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="okButton" mnemonicParsing="false" onAction="#okButtonClick" prefHeight="31.0" prefWidth="84.0" style="-fx-border-color: #BDBDBD; -fx-border-width: 1;" text="OK" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+            <Region prefHeight="39.0" prefWidth="27.0" />
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" />
+   </padding>
+</VBox>

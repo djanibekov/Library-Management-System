@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ImgController">
+    <children>
+        <ImageView fx:id="imgView" fitHeight="314.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="https://images-na.ssl-images-amazon.com/images/I/41aMJch2MwL._SL200_.jpg" />
+            </image>
+        </ImageView>
+      <VBox prefHeight="295.0" prefWidth="254.0">
+         <children>
+            <Label fx:id="ISBN" prefHeight="26.0" prefWidth="253.0" />
+            <Label fx:id="ISBN1" prefHeight="26.0" prefWidth="253.0" />
+            <Label fx:id="Author" prefHeight="26.0" prefWidth="253.0" />
+            <Label fx:id="Edition" prefHeight="26.0" prefWidth="253.0" />
+            <Label fx:id="Binding" prefHeight="26.0" prefWidth="253.0" />
+            <Label fx:id="Publisher" prefHeight="26.0" prefWidth="253.0" />
+            <Label fx:id="Published" prefHeight="26.0" prefWidth="253.0" />
+         </children>
+      </VBox>
+    </children>
+</HBox>

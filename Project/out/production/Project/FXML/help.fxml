@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane prefHeight="400.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <content>
+            <HBox prefHeight="592.0" prefWidth="794.0">
+               <children>
+                  <VBox prefHeight="118.0" prefWidth="220.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="798.0" text="How to borrow book or return it, add new...(student , book, librarian)" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Unicode MS" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="289.0" fitWidth="577.0">
+                           <image>
+                              <Image url="@screen/InkedСнимок%20экрана%20(70)_LI.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="48.0" prefWidth="600.0" text="To add new student firstly choose button 'book' 'student' or 'librarian'" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Unicode MS" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="267.0" fitWidth="578.0">
+                           <image>
+                              <Image url="@screen/InkedСнимок%20экрана%20(76)_LI.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="25.0" prefWidth="600.0" text="To return the book firstly press on row, which contains book, and then press button 'return'  " textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Unicode MS" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="25.0" prefWidth="600.0" text="If you choose 'borrow' book there will be table of books where you can choose book " textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Unicode MS" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="239.0" fitWidth="588.0">
+                           <image>
+                              <Image url="@screen/InkedСнимок%20экрана%20(71)_LI.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="25.0" prefWidth="600.0" text="Then choose local ISBN" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Unicode MS" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

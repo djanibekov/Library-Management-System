@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="LoginPasswordWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="444.0" style="-fx-border-width: 4;" stylesheets="@addNewStudent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+    <children>
+        <Region prefHeight="24.0" prefWidth="394.0" VBox.vgrow="ALWAYS" />
+        <HBox prefHeight="42.0" prefWidth="394.0" spacing="15.0">
+            <children>
+                <Region prefHeight="30.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                <RadioButton fx:id="administratorRadioButton" mnemonicParsing="false" text="Administrator" HBox.hgrow="ALWAYS">
+                    <padding>
+                        <Insets right="14.0" />
+                    </padding>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="Group" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="librarianRadioButton" mnemonicParsing="false" text="Librarian" toggleGroup="$Group" HBox.hgrow="ALWAYS">
+                    <padding>
+                        <Insets right="14.0" />
+                    </padding>
+                </RadioButton>
+                <RadioButton id="studentRadioButton" fx:id="studentRadioButton" mnemonicParsing="false" text="Student" toggleGroup="$Group" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="30.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+      <Region prefHeight="0.0" prefWidth="420.0" VBox.vgrow="SOMETIMES" />
+        <HBox prefHeight="28.0" prefWidth="418.0">
+            <children>
+                <Region prefHeight="34.0" prefWidth="98.0" HBox.hgrow="ALWAYS" />
+                <Label id="LoginLabel" prefHeight="28.0" prefWidth="103.0" text="Login:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Rockwell" size="15.0" />
+               </font></Label>
+                <TextField fx:id="loginTextField" prefHeight="26.0" prefWidth="206.0" promptText="Login">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TextField>
+                <Region prefHeight="34.0" prefWidth="97.0" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+        <Region prefHeight="20.0" prefWidth="469.0" VBox.vgrow="NEVER" />
+        <HBox prefHeight="28.0" prefWidth="418.0">
+            <children>
+                <Region prefHeight="34.0" prefWidth="98.0" HBox.hgrow="ALWAYS" />
+                <Label id="PasswordLabel" prefHeight="28.0" prefWidth="103.0" text="Password:" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Rockwell" size="15.0" />
+               </font></Label>
+            <PasswordField fx:id="passwordTextField" prefHeight="26.0" prefWidth="206.0" promptText="Password" />
+                <Region prefHeight="34.0" prefWidth="97.0" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+        <Region prefHeight="28.0" prefWidth="331.0" />
+        <HBox prefHeight="28.0" prefWidth="418.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Region prefHeight="28.0" prefWidth="331.0" HBox.hgrow="ALWAYS" />
+                <Button id="OkButton" fx:id="OkButton" mnemonicParsing="false" onAction="#okButtonClick" prefHeight="26.0" prefWidth="100.0" style="-fx-border-width: 1; -fx-border-color: #BDBDBD;" text="OK" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Button>
+                <Region prefHeight="28.0" prefWidth="32.0" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+        <Region prefHeight="4.0" prefWidth="469.0" VBox.vgrow="ALWAYS" />
+    </children>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+</VBox>

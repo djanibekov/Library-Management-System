@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="564.0" stylesheets="@addNewStudent.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdministratorMenuController">
+    <top>
+        <VBox prefWidth="564.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="0.0" prefWidth="200.0" />
+            <HBox prefHeight="46.0" prefWidth="564.0" spacing="20.0" style="-fx-background-color: #2A4B7C#2A4B7C; -fx-border-style: solid; -fx-border-color: #2A293E#2A293E; -fx-border-width: 2; -fx-padding: 5;">
+               <children>
+                  <Region prefHeight="200.0" prefWidth="0.0" />
+                      <Button fx:id="booksButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" onAction="#booksButtonClicked" prefHeight="35.0" prefWidth="96.0" style="-fx-padding: 5; -fx-border-style: solid; -fx-border-width: 1; -fx-background-insets: 0; -fx-border-color: #BDBDBD;" text="Books" textOverrun="WORD_ELLIPSIS">
+                          <font>
+                              <Font name="System Bold" size="18.0" />
+                          </font>
+                      </Button>
+                      <Button fx:id="studentButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" onAction="#studentButtonClicked" prefHeight="35.0" prefWidth="96.0" style="-fx-padding: 5; -fx-border-style: solid; -fx-border-width: 1; -fx-background-insets: 0; -fx-border-color: #BDBDBD;" text="Student" textOverrun="WORD_ELLIPSIS">
+                          <font>
+                              <Font name="System Bold" size="18.0" />
+                          </font>
+                      </Button>
+                      <Button fx:id="librarianButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" onAction="#librarianButtonClicked" prefHeight="35.0" prefWidth="96.0" style="-fx-padding: 5; -fx-border-style: solid; -fx-border-width: 1; -fx-background-insets: 0; -fx-border-color: #BDBDBD;" text="Librarian" textOverrun="WORD_ELLIPSIS">
+                          <font>
+                              <Font name="System Bold" size="18.0" />
+                          </font>
+                      </Button>
+                  <Region prefHeight="40.0" prefWidth="19.0" HBox.hgrow="ALWAYS" />
+                      <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonClick" prefHeight="25.0" prefWidth="62.0" style="-fx-border-color: #BDBDBD;" text="New..." HBox.hgrow="ALWAYS">
+                          <font>
+                              <Font name="System Bold" size="12.0" />
+                          </font>
+                      </Button>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutButtonClicked" prefHeight="25.0" prefWidth="62.0" style="-fx-border-color: #BDBDBD;" text="Log out">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Region prefHeight="0.0" prefWidth="200.0" />
+         </children></VBox>
+    </top>
+    <center>
+        <VBox prefHeight="371.0" prefWidth="605.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox fx:id="hBox" prefHeight="356.0" prefWidth="545.0" style="-fx-border-style: solid; -fx-border-color: #2A293E#2A293E; -fx-border-width: 2; -fx-background-color: #577284#577284 #577284#577284;" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="label" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="340.0" prefWidth="610.0" text="Empty" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="System Bold" size="48.0" />
+                            </font></Label>
+                    </children></HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

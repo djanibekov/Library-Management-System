@@ -1,0 +1,30 @@
+.root{
+    -fx-font-size: 12pt;
+    -fx-font-family: "Tahoma";
+    -fx-base: #1E90FF;
+    -fx-background: #006680;
+    -fx-focus-color: #B6A678;
+         -fx-border-style:solid;
+         -fx-border-color:linear-gradient(#61a2c1, #2A5058);
+         -fx-border-width:3;
+}
+
+#okButton{
+
+
+    -fx-border-style: solid;
+    -fx-border-color: darkblue;
+    -fx-border-width: 2;
+    -fx-border-radius: 90;
+    -fx-background-radius: 90;
+    }
+
+}
+
+
+
+
+
+
+
+
